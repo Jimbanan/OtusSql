@@ -7,9 +7,7 @@ CREATE TABLE IF NOT EXISTS movies
     genre           VARCHAR NOT NULL,
     rating          DECIMAL CHECK ( rating BETWEEN 0 AND 10),
     duration        INTERVAL,
-    description     VARCHAR NOT NULL,
-    directors_id    INTEGER UNIQUE,
-    actors_id       INTEGER
+    description     VARCHAR NOT NULL
 );
 
 -- Режиссеры: информация о режиссерах включает имя, фамилию, дату рождения и национальность.
